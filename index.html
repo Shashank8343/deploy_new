@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            text-align:center ;
+        }
+        h1{
+            margin: 25px 0px 0px 0px;
+            color: rgba(72, 0, 255, 0.681);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        h2 {
+            color: dodgerblue;
+            font-style: oblique;
+        }
+        h3{
+            color: aquamarine;
+        }
+        label{
+            color: rgba(242, 240, 255, 0.59);
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <form action="forms2.html">
+    <center>
+        <h1> PLease choose a course</h1>
+    </center>
+    <h2>Courses offered at Yhills</h2>
+    <label for="FSWD">Full Stack Web Dev</label>
+    <input id='FSWD' type="radio" name="a" value="Full Stack Web Dev">
+    <label for="DS">Data Science</label>
+    <input type="radio" id="DS" name="a" value="Data Science">
+    <h3>Provide Rating</h3>
+    <div><select name="RATING">
+        <option value="GREAT">Gr8</option>
+        <option value="GOOD">Gud</option>
+        <option value="AVERAGE">Avg</option>
+        <option value="POOR">por</option>
+    </select> </div><br>
+    <textarea name="YOUR FEEDBACK"  cols="50" rows="5"></textarea><br>
+    <input type="submit" name="" value="SUBMIT" onclick="sp()">
+    <script>
+        function sp()
+        {
+            alert("THANK YOU FOR REGISTERING")
+        }
+    </script>
+    </form>
+</body>
+</html>
